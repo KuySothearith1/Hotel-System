@@ -53,7 +53,7 @@ namespace Hotet_System.Forms
             cboCustomerType.Text = customer.CustomerType;
             txtCustomerName.Text = customer.CustomerName;
             cboSex.Text = customer.Sex;
-            txtDob.Text = customer.Dob;
+            dtpDob.Text = customer.Dob;
             txtPhoneNumber.Text = customer.Phone;
             txtPassport.Text = customer.PassportNumber;
             txtCountry.Text = customer.Country;

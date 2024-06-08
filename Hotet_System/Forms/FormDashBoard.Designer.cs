@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDashBoard));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -63,6 +64,8 @@
             this.myButton3 = new Hotet_System.Controller.MyButton();
             this.myButton2 = new Hotet_System.Controller.MyButton();
             this.myButton1 = new Hotet_System.Controller.MyButton();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.Clock = new System.Windows.Forms.Timer(this.components);
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
@@ -119,6 +122,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.panel9);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.pictureBox5);
             this.panel3.Controls.Add(this.myButton12);
@@ -146,7 +150,7 @@
             this.panel4.Controls.Add(this.myButton10);
             this.panel4.Controls.Add(this.lblAppUser);
             this.panel4.Controls.Add(this.myButton11);
-            this.panel4.Location = new System.Drawing.Point(1553, 232);
+            this.panel4.Location = new System.Drawing.Point(1525, 208);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(301, 181);
             this.panel4.TabIndex = 65;
@@ -179,7 +183,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(1673, 159);
+            this.pictureBox5.Location = new System.Drawing.Point(1645, 135);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(76, 67);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -189,7 +193,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.panel7.Location = new System.Drawing.Point(80, 495);
+            this.panel7.Location = new System.Drawing.Point(52, 471);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1793, 21);
             this.panel7.TabIndex = 62;
@@ -202,7 +206,7 @@
             this.panel6.Controls.Add(this.myButton7);
             this.panel6.Controls.Add(this.lblReservation);
             this.panel6.Controls.Add(this.myButton8);
-            this.panel6.Location = new System.Drawing.Point(1083, 232);
+            this.panel6.Location = new System.Drawing.Point(1055, 208);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(301, 181);
             this.panel6.TabIndex = 61;
@@ -236,7 +240,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1203, 159);
+            this.pictureBox4.Location = new System.Drawing.Point(1175, 135);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(76, 67);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -251,7 +255,7 @@
             this.panel5.Controls.Add(this.myButton4);
             this.panel5.Controls.Add(this.lblRoom);
             this.panel5.Controls.Add(this.myButton5);
-            this.panel5.Location = new System.Drawing.Point(595, 232);
+            this.panel5.Location = new System.Drawing.Point(567, 208);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(301, 181);
             this.panel5.TabIndex = 58;
@@ -285,7 +289,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(706, 159);
+            this.pictureBox3.Location = new System.Drawing.Point(678, 135);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(76, 67);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -300,7 +304,7 @@
             this.panel8.Controls.Add(this.myButton3);
             this.panel8.Controls.Add(this.lblCustomer);
             this.panel8.Controls.Add(this.myButton2);
-            this.panel8.Location = new System.Drawing.Point(101, 232);
+            this.panel8.Location = new System.Drawing.Point(73, 208);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(301, 181);
             this.panel8.TabIndex = 55;
@@ -334,7 +338,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(212, 159);
+            this.pictureBox1.Location = new System.Drawing.Point(184, 135);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(76, 67);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -389,7 +393,7 @@
             this.myButton12.FlatAppearance.BorderSize = 0;
             this.myButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.myButton12.ForeColor = System.Drawing.Color.White;
-            this.myButton12.Location = new System.Drawing.Point(1532, 141);
+            this.myButton12.Location = new System.Drawing.Point(1504, 117);
             this.myButton12.Name = "myButton12";
             this.myButton12.Size = new System.Drawing.Size(341, 308);
             this.myButton12.TabIndex = 63;
@@ -443,7 +447,7 @@
             this.myButton9.FlatAppearance.BorderSize = 0;
             this.myButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.myButton9.ForeColor = System.Drawing.Color.White;
-            this.myButton9.Location = new System.Drawing.Point(1062, 141);
+            this.myButton9.Location = new System.Drawing.Point(1034, 117);
             this.myButton9.Name = "myButton9";
             this.myButton9.Size = new System.Drawing.Size(341, 308);
             this.myButton9.TabIndex = 59;
@@ -498,7 +502,7 @@
             this.myButton6.FlatAppearance.BorderSize = 0;
             this.myButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.myButton6.ForeColor = System.Drawing.Color.White;
-            this.myButton6.Location = new System.Drawing.Point(574, 141);
+            this.myButton6.Location = new System.Drawing.Point(546, 117);
             this.myButton6.Name = "myButton6";
             this.myButton6.Size = new System.Drawing.Size(341, 308);
             this.myButton6.TabIndex = 56;
@@ -553,13 +557,27 @@
             this.myButton1.FlatAppearance.BorderSize = 0;
             this.myButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.myButton1.ForeColor = System.Drawing.Color.White;
-            this.myButton1.Location = new System.Drawing.Point(80, 141);
+            this.myButton1.Location = new System.Drawing.Point(52, 117);
             this.myButton1.Name = "myButton1";
             this.myButton1.Size = new System.Drawing.Size(341, 308);
             this.myButton1.TabIndex = 53;
             this.myButton1.TextColor = System.Drawing.Color.White;
             this.myButton1.UseVisualStyleBackColor = false;
             this.myButton1.Click += new System.EventHandler(this.myButton1_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel9.Location = new System.Drawing.Point(1886, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(39, 1155);
+            this.panel9.TabIndex = 66;
+            // 
+            // Clock
+            // 
+            this.Clock.Enabled = true;
+            this.Clock.Tick += new System.EventHandler(this.Clock_Tick);
             // 
             // FormDashBoard
             // 
@@ -631,5 +649,7 @@
         private Controller.MyButton myButton11;
         private System.Windows.Forms.PictureBox pictureBox5;
         private Controller.MyButton myButton12;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Timer Clock;
     }
 }

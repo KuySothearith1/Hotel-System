@@ -175,6 +175,11 @@ namespace Hotet_System.Forms
 
         }
 
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
         private void label17_Click(object sender, EventArgs e)
         {
 

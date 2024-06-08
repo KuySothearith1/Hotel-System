@@ -58,5 +58,17 @@ namespace Hotet_System.Forms
             formInvoice.ShowDialog();
 
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtCustomerName.Clear();
+            txtRoomName.Clear();
+            txtPrice.Clear();
+            txtTotal.Clear();
+            txtND.Clear();
+            dtpCheckIn.Value = DateTime.Now;
+            dtpCheckOut.Value = DateTime.Now;
+            cboPayment.SelectedIndex = -1;
+        }
     }
 }

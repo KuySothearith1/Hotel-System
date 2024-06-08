@@ -53,7 +53,6 @@
             this.txtPassport = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.txtDob = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
@@ -77,6 +76,7 @@
             this.btnEdit = new Hotet_System.Controller.MyButton();
             this.btnNew = new Hotet_System.Controller.MyButton();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtDob = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -320,19 +320,6 @@
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(1222, 104);
             this.panel18.TabIndex = 67;
-            // 
-            // txtDob
-            // 
-            this.txtDob.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.txtDob.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDob.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDob.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
-            this.txtDob.Location = new System.Drawing.Point(643, 17);
-            this.txtDob.Name = "txtDob";
-            this.txtDob.ReadOnly = true;
-            this.txtDob.Size = new System.Drawing.Size(487, 46);
-            this.txtDob.TabIndex = 3;
-            this.txtDob.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label10
             // 
@@ -650,6 +637,19 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Customer Detail";
             // 
+            // txtDob
+            // 
+            this.txtDob.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.txtDob.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDob.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDob.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            this.txtDob.Location = new System.Drawing.Point(639, 30);
+            this.txtDob.Name = "txtDob";
+            this.txtDob.ReadOnly = true;
+            this.txtDob.Size = new System.Drawing.Size(487, 46);
+            this.txtDob.TabIndex = 4;
+            this.txtDob.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // FormCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -658,7 +658,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCustomer";
             this.Text = "FormCustomer";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -735,11 +735,11 @@
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.TextBox txtCountry;
         private System.Windows.Forms.TextBox txtPassport;
-        private System.Windows.Forms.TextBox txtDob;
         private System.Windows.Forms.TextBox txtType;
         private System.Windows.Forms.TextBox txtSex;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtCode;
         private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.TextBox txtDob;
     }
 }

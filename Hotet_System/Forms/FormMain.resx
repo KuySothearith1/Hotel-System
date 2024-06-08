@@ -145,7 +145,7 @@
   <data name="btnInvoice.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAArlJREFUWEftmE1sDVEYhm/TikipIG38JRobxE8rCJJWJCQsqKT+E4qkLKQbVlYE
+        DAAACwwBP0AiyAAAArlJREFUWEftmE1sDVEYhm/TikipIG38JRobxE8rCJJWJCQsqKT+E4qkLKQbVlYE
         DXaNpT0bG7ZCRCwspBsLREQQiY2VsMDC9bzT15hzb6d33DuDNN7kyZnznu878935OTNzS/+0yuXyYTgK
         nXARtkOXt9WqfxY0fgROwQK36svX+ER5mv+Qd5kugkbhp764lcbb/g5fxzajVn2pVp406l2mS0FwF/Qr
         22Ar7IFpbtWXr3H94oUw6Fb9LHmaP3Mx19wtRJr/fzHjqe5i2O6A3bA3Azug2anKXWVf+R22GypmGH5H
@@ -664,7 +664,7 @@
   <data name="pictureBox8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAADAdJREFUeF7tnVfMbFUVx0G6qIBSLXTQB2mCoEYBBUGk6YMh+mBMaFEjVeVBH3gw
+        DAAACwwBP0AiyAAADAdJREFUeF7tnVfMbFUVx0G6qIBSLXTQB2mCoEYBBUGk6YMh+mBMaFEjVeVBH3gw
         QTFiaCKoRA3YjaDGGDsGUBGNJRYSwY4K9oJYr7/fzPrId+856/QzM991fsk/97sza629Z+bMPnuvXWaT
         JUuWLFmyZMmS9Vi3bt2maD90Knoteif6MvoOuhv9Hv0j5N8+5nPaaPsadAraL0IuqYM3a190FvoA+g0a
         il+j96Mz0T5R3BLhDXk08k2/Fc2K76GL0K5Rjf8/ePHPRp9A/0LzwrI/jo6Kam388GKPRbehRcM6nYw2
@@ -836,7 +836,7 @@
         YzwxFq1TjwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picGreen.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAAAxZJREFUaEPtmk1r1FAUhrvwY6/gB7r0a+/aJtOidCUjkntnrAsXUkWtXSjo0h9g
@@ -897,4 +897,7 @@
         YII=
 </value>
   </data>
+  <metadata name="Clock.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

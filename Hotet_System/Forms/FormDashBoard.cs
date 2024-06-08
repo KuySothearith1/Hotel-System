@@ -24,6 +24,9 @@ namespace Hotet_System.Forms
 
         private void FormDashBoard_Load(object sender, EventArgs e)
         {
+
+           
+
             string connectionString = "Data Source=192.168.56.1:1521/XEPDB1;User Id=MyHotelData; Password=12345;";
             string Customer = "Customer";
             string Room = "Room";
@@ -159,6 +162,11 @@ namespace Hotet_System.Forms
         private void panel7_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Clock_Tick(object sender, EventArgs e)
+        {
+             
         }
     }
 }

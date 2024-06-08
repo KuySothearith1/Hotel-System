@@ -127,15 +127,25 @@ namespace Hotet_System.Forms
 
         private void FormMain_Load(object sender, EventArgs e)
         {
+
+            lblClock.Text = DateTime.Now.ToLongTimeString();
+            lblDate.Text = DateTime.Now.ToLongDateString();
+
+
+
             WindowState = FormWindowState.Maximized;
 
             if (this.UserLogin.IsAdmin)
             {
                 btnSetting.Visible = true;
+                lblSuper.Visible = true;
+                picGreen.Visible = true;
             }
             else
             {
                 btnSetting.Visible = false;
+                lblSuper.Visible = false;
+                picGreen.Visible = false;
             }
 
             dtUserPermission = AppUserPermissions.Get(this.UserLogin.AppUserId);
@@ -271,6 +281,22 @@ namespace Hotet_System.Forms
             {
                 invoice.BringToFront();
             }
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Clock_Tick(object sender, EventArgs e)
+        {
+            lblClock.Text = DateTime.Now.ToLongTimeString();
+            Clock.Start();
+        }
+
+        private void lblDate_Click(object sender, EventArgs e)
+        {
+
         }
     }
     
