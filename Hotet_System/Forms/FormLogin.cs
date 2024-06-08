@@ -89,5 +89,36 @@ namespace Hotet_System.Forms
             }
             return result;
         }
+
+        private void chShow_CheckedChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+       
+
+       
+
+        private void hide_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '*'){
+                show.BringToFront();
+                txtPassword.PasswordChar = '\0';
+            }
+        }
+
+        private void show_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '\0')
+            {
+                hide.BringToFront();
+                txtPassword.PasswordChar = '*';
+            }
+        }
     }
 }

@@ -13,7 +13,10 @@ namespace Hotet_System.Forms
     public partial class FormInvoiceAdd : Form
     {
         FormMain formMain;
-        
+        public string Date, CustomerName, Checkin, CheckOut, Payment, RoomName; 
+            public double Quantity, Price, Total;
+
+
         public FormInvoiceAdd(FormMain formMain)
         {
             InitializeComponent();
@@ -42,21 +45,21 @@ namespace Hotet_System.Forms
                 formInvoice.Payment ="";
             else 
                 formInvoice.Payment = cboPayment.SelectedItem.ToString();
+           
+                double Quantity = Convert.ToDouble(txtND.Text);
+                formInvoice.Quantity =txtND.Text;
+                double Price = Convert.ToDouble(txtPrice.Text);
+                formInvoice.Price = txtPrice.Text;
 
-            double Quantity = Convert.ToDouble(txtND.Text);
-            formInvoice.Quantity =txtND.Text;
-            double Price = Convert.ToDouble(txtPrice.Text);
-            formInvoice.Price = txtPrice.Text;
+                double Total = Price * Quantity;
+                txtTotal.Text = Total.ToString();
+                formInvoice.Total =  Convert.ToString(txtTotal.Text);
+                formInvoice.Checkin = Convert.ToString(dtpCheckIn.Text);
+                formInvoice.CheckOut = Convert.ToString(dtpCheckOut.Text);
+
+
+                formInvoice.ShowDialog();
             
-            double Total = Price * Quantity;
-           txtTotal.Text = Total.ToString();
-            formInvoice.Total =  Convert.ToString(txtTotal.Text);
-            formInvoice.Checkin = Convert.ToString(dtpCheckIn.Text);
-            formInvoice.CheckOut = Convert.ToString(dtpCheckOut.Text);
-
-            
-            formInvoice.ShowDialog();
-
         }
 
         private void btnClear_Click(object sender, EventArgs e)
